@@ -21,16 +21,13 @@
     <div class="card">
         <h1>给小姐姐祖宗磕头</h1>
         <p class="desc">诚心一拜</p>
-        
         <div class="scene">
             <img id="img" src="/normal.png" alt="磕头">
             <div class="bubble" id="bubble">白痴</div>
         </div>
-        
         <div class="counter" id="count">0</div>
         <button id="btn">磕 头！</button>
     </div>
-
     <script>
         const img = document.getElementById('img');
         const bubble = document.getElementById('bubble');
@@ -38,7 +35,6 @@
         const btn = document.getElementById('btn');
         let count = 0;
         const words = ["白痴", "傻逼"];
-        
         function kowtow() {
             img.src = '/kowtow.png';
             bubble.textContent = words[Math.floor(Math.random() * words.length)];
